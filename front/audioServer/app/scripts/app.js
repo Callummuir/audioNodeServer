@@ -2,19 +2,15 @@
 
 /**
  * @ngdoc overview
- * @name audioServerApp
+ * @name intervalTimerApp
  * @description
- * # audioServerApp
+ * # intervalTimerApp
  *
  * Main module of the application.
  */
 angular
-  .module('audioServerApp', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+  .module('intervalTimerApp', [
+    'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider

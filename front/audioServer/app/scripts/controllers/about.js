@@ -2,16 +2,12 @@
 
 /**
  * @ngdoc function
- * @name audioServerApp.controller:AboutCtrl
+ * @name intervalTimerApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the audioServerApp
+ * Controller of the intervalTimerApp
  */
-angular.module('audioServerApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('intervalTimerApp')
+  .controller('AboutCtrl', function ($scope) {
+    $scope.test = "this is an about page test";
   });

@@ -2,16 +2,13 @@
 
 /**
  * @ngdoc function
- * @name audioServerApp.controller:MainCtrl
+ * @name intervalTimerApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the audioServerApp
+ * Controller of the intervalTimerApp
  */
-angular.module('audioServerApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('intervalTimerApp')
+  .controller('MainCtrl', function ($scope) {
+   
+
   });
