@@ -7,7 +7,7 @@ angular.module('intervalTimerApp').run(['$templateCache', function($templateCach
 
 
   $templateCache.put('views/main.html',
-    "<div> test </div>"
+    "<button ng-click=\"playAudio()\" type=\"button\" class=\"btn btn-default audioButton\">Play Audio</button>"
   );
 
 }]);
