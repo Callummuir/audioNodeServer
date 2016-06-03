@@ -1,12 +1,11 @@
 (function(){
   'use strict';
 
-  var express    = require("express");
-  
-  // (https://github.com/obastemur/mediaserver)
-var ms = require('mediaserver');
-var audioFilePath = "audio/testAudio.wav";
+  var express    = require("express"); 
+  var ms = require('mediaserver');
+  // (https://github.com/obastemur/mediaserver)  
 
+  var audioFilePath = "audio/testAudio.wav";
   var app = express();
       
   // set the static files location /public/img will be /img for users
@@ -17,7 +16,7 @@ var audioFilePath = "audio/testAudio.wav";
   console.log("App listening on port 8080");
 
   // api ---------------------------------------------------------------------
-  // Test api function
+  // get audio api function
   app.get('/getAudio', function(req, res) {
     console.log("getting audio");
     ms.pipe(req, res, audioFilePath);

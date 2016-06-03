@@ -35,6 +35,7 @@ angular.module('intervalTimerApp')
 			request.send();  
 		};
 
+		//create a source to play the audio
 		var createSource = function(buffer){
 			var source = context.createBufferSource();
 			source.buffer = buffer;
@@ -50,7 +51,6 @@ angular.module('intervalTimerApp')
 
   	$scope.playAudio = function(){
   		source.start(0);
-  		console.log("playing audio");
   	}
 
   });
