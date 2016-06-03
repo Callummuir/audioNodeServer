@@ -21,11 +21,10 @@ angular.module('intervalTimerApp')
     //holding buffer for the audio
     var audioBuffer = null;
 
-
+    //load the remote audio
 		var loadAudio = function(){
 			var request = new XMLHttpRequest();
-			//todo update to the one we will use
-			request.open("GET", 'http://127.0.0.1:8080/getAudio', true);
+			request.open("GET", 'http://127.0.0.1:8080/getAudio');
 			request.responseType = 'arraybuffer';
 			request.onload = function(){
 				context.decodeAudioData(request.response, function(buffer){

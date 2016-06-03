@@ -2,7 +2,10 @@
   'use strict';
 
   var express    = require("express");
-  // (https://github.com/felixge/node-mysql)
+  
+  // (https://github.com/obastemur/mediaserver)
+var ms = require('mediaserver');
+var audioFilePath = "audio/testAudio.wav";
 
   var app = express();
       
@@ -15,8 +18,9 @@
 
   // api ---------------------------------------------------------------------
   // Test api function
-  app.get('/test', function(req, res) {
-    res.send("Test API"); 
-    console.log("test API");
+  app.get('/getAudio', function(req, res) {
+    console.log("getting audio");
+    ms.pipe(req, res, audioFilePath);
+    return ;
   });
 }());

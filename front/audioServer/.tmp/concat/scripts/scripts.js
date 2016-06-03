@@ -56,7 +56,7 @@ angular.module('intervalTimerApp')
 		var loadAudio = function(){
 			var request = new XMLHttpRequest();
 			//todo update to the one we will use
-			request.open("GET", 'http://127.0.0.1:8080/getAudio', true);
+			request.open("GET", 'http://127.0.0.1:8080/getAudio');
 			request.responseType = 'arraybuffer';
 			request.onload = function(){
 				context.decodeAudioData(request.response, function(buffer){
