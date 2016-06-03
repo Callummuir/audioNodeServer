@@ -1,0 +1,11 @@
+{
+  "name": "audioServer",
+  "version": "0.0.1",
+  "description": "Server for the audio server project",
+  "main": "server.js",
+  "author": "Callum Muir",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.10.6"
+  }
+}
